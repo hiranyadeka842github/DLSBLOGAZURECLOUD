@@ -1,5 +1,13 @@
 <<<<<<< HEAD
 # The Technical Assignmet Exercise to create a Ghost Blog to available globally with required criterias
 =======
-# DLSBLOGAZURECLOUD
->>>>>>> 08d9333a87bd574169c92899eeef38e80d3da6e8
+### High Level Architecture design split into two secitoons:
+        1. Azure Infrastructure Components
+        2. Application Development Components
+        
+        
+### Common methodologies to be used are  #####
+        DEVOPS CI/CD Pipelines
+        GITHUB REPOS
+        
+
