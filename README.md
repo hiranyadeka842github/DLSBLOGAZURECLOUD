@@ -1,0 +1,1 @@
+# The Technical Assignmet Exercise to create a Ghost Blog to available globally with required criterias
