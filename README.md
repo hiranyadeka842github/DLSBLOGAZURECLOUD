@@ -5,7 +5,9 @@
         1. Azure Infrastructure Components
         2. Application Development Components
         
-        
+   DIAGRAM creation is in Progress.......
+   
+   
 ### Common methodologies to be used are  #####
         DEVOPS CI/CD Pipelines
         GITHUB REPOS
