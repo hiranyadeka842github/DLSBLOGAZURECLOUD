@@ -6,23 +6,15 @@
       "type": "string",
       "defaultValue": "dslcompanydeka3030app1"
     },
-    "hostingPlanName": {
-      "type": "string",
-      "defaultValue": "dslcompanydeka3030app1-plan"
-    },
     "siteLocation": {
       "type": "string",
       "defaultValue": "eastus"
     },
-    "commsrvcloc": {
-      "type": "string",
-      "defaultValue": "eastus"
-    },
-    "sku": {
+    "sku_tier": {
       "type": "string",
       "defaultValue": "S1",
       "metadata": {
-        "description": "App Service Plan's pricing tier."
+        "description": "App Service Plan's pricing tier. Details at https://azure.microsoft.com/en-us/pricing/details/app-service/"
       },
       "allowedValues": [
         "S1",
@@ -78,21 +70,23 @@
   },
   "variables": {
     "appInsightsName": "[concat(parameters('applicationName'), '-insights')]",
+    "hostingPlanName": "[concat(parameters('applicationName'), '-plan')]",
+    "sku": "[parameters('sku_tier')]",
     "subscriptionId": "[subscription().subscriptionId]",
     "rggroup": "[resourceGroup().name]"
   },
   "resources": [
     {
-      "name": "[parameters('hostingPlanName')]",
+      "name": "[variables('hostingPlanName')]",
       "type": "Microsoft.Web/serverfarms",
       "location": "[parameters('siteLocation')]",
       "apiVersion": "2018-02-01",
       "sku": {
-        "name": "[parameters('sku')]"
+        "name": "[variables('sku')]"
       },
       "dependsOn": [],
       "properties": {
-        "name": "[parameters('hostingPlanName')]",
+        "name": "[variables('hostingPlanName')]",
         "numberOfWorkers": 1
       }
     },
@@ -102,15 +96,15 @@
       "location": "[parameters('siteLocation')]",
       "apiVersion": "2018-11-01",
       "dependsOn": [
-        "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
+        "[resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName'))]"
       ],
       "tags": {
-        "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName')))]": "Resource",
+        "[concat('hidden-related:', resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName')))]": "Resource",
         "displayName": "[parameters('applicationName')]"
       },
       "properties": {
         "name": "[parameters('applicationName')]",
-        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('hostingPlanName'))]"
       },
       "resources": [
         {
@@ -167,14 +161,14 @@
       "type": "Microsoft.OperationalInsights/workspaces",
       "apiVersion": "2020-08-01",
       "name": "[parameters('laworkspace')]",
-      "location": "[parameters('commsrvcloc')]",
+      "location": "[parameters('siteLocation')]",
       "properties": {}
     },
     {
       "name": "[variables('appInsightsName')]",
       "type": "Microsoft.Insights/components",
       "location": "[parameters('siteLocation')]",
-      "apiVersion": "2020-02-02-preview",
+      "apiVersion": "2020-02-02",
       "condition": "[parameters('Deploy App Insights')]",
       "dependsOn": [
         "[resourceId('Microsoft.Web/sites', parameters('applicationName'))]"
