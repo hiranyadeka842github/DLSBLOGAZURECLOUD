@@ -176,7 +176,7 @@
     "hostingPlanName": "[concat(parameters('applicationName'), '-plan')]",
     "sku": "[parameters('sku_tier')]",
     "subscriptionId": "[subscription().subscriptionId]",
-    "rggroup": "[resourceGroup().name]",
+    "rggroup": "appdeploy-location1-rg",
     "cosmosAccountName": "[toLower(parameters('cosmosactName'))]",
     "websiteName": "[parameters('applicationName')]",
     "settingName": "[concat(toLower(variables('hostingPlanName')), '-setting')]",
