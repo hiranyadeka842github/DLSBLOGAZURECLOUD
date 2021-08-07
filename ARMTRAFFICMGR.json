@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "uniqueDnsName": {
+      "type": "string",
+      "defaultValue": "aztrafficghostblogdeka1",
+      "metadata": {
+        "description": "Traffic Manager"
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Network/trafficManagerProfiles",
+      "apiVersion": "2018-08-01",
+      "name": "aztrafficghostblogdeka1endpoint",
+      "location": "global",
+      "properties": {
+        "profileStatus": "Enabled",
+        "trafficRoutingMethod": "Performance",
+        "dnsConfig": {
+          "relativeName": "[parameters('uniqueDnsName')]",
+          "ttl": 30
+        },
+        "monitorConfig": {
+          "protocol": "HTTPS",
+          "port": 443,
+          "path": "/",
+          "expectedStatusCodeRanges": [
+            {
+              "min": 200,
+              "max": 202
+            },
+            {
+              "min": 301,
+              "max": 302
+            }
+          ]
+        },
+        "endpoints": [
+          {
+            "type": "Microsoft.Network/TrafficManagerProfiles/ExternalEndpoints",
+            "name": "endpoint1",
+            "properties": {
+              "target": "dslcompanydeka3030app1.azurewebsites.net",
+              "endpointStatus": "Enabled",
+              "endpointLocation": "eastus"
+            }
+          },
+          {
+            "type": "Microsoft.Network/TrafficManagerProfiles/ExternalEndpoints",
+            "name": "endpoint2",
+            "properties": {
+              "target": "dslcompanydeka3030app2.azurewebsites.net",
+              "endpointStatus": "Enabled",
+              "endpointLocation": "West Europe"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
