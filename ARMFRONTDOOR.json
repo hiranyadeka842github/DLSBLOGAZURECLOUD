@@ -93,13 +93,6 @@
                             "sampleSize": 4,
                             "successfulSamplesRequired": 2
                         }
-                    },
-                    {
-                        "name": "loadBalancingSettings2",
-                        "properties": {
-                            "sampleSize": 2,
-                            "successfulSamplesRequired": 1
-                        }
                     }
                 ],
                 "backendPools": [
@@ -125,31 +118,6 @@
                             },
                             "healthProbeSettings": {
                                 "id": "[resourceId('Microsoft.Network/frontDoors/healthProbeSettings', parameters('frontDoorName'), 'healthProbeSettings1')]"
-                            }
-                        }
-                    },
-                    {
-                        "name": "[parameters('backendPools2').name]",
-                        "properties": {
-                            "copy": [
-                                {
-                                    "name": "backends",
-                                    "count": "[length(parameters('backendPools2').backends)]",
-                                    "input": {
-                                        "address": "[parameters('backendPools2').backends[copyIndex('backends')].address]",
-                                        "httpPort": "[parameters('backendPools2').backends[copyIndex('backends')].httpPort]",
-                                        "httpsPort": "[parameters('backendPools2').backends[copyIndex('backends')].httpsPort]",
-                                        "weight": "[parameters('backendPools2').backends[copyIndex('backends')].weight]",
-                                        "priority": "[parameters('backendPools2').backends[copyIndex('backends')].priority]",
-                                        "enabledState": "[parameters('backendPools2').backends[copyIndex('backends')].enabledState]"
-                                    }
-                                }
-                            ],
-                            "loadBalancingSettings": {
-                                "id": "[resourceId('Microsoft.Network/frontDoors/loadBalancingSettings', parameters('frontDoorName'), 'loadBalancingSettings2')]"
-                            },
-                            "healthProbeSettings": {
-                                "id": "[resourceId('Microsoft.Network/frontDoors/healthProbeSettings', parameters('frontDoorName'), 'healthProbeSettings2')]"
                             }
                         }
                     }
