@@ -1,0 +1,676 @@
+https://docs.microsoft.com/en-US/cli/azure/group#az_group_list
+Read more about the command in reference docs
+Creating the resource group
+{
+  "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg",
+  "location": "eastus",
+  "managedBy": null,
+  "name": "ghostappldeka-rg",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+Resource group Created
+Deploying the dslcompanydeka3030app1 for Ghost application build on Azure app servuces
+{
+  "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Resources/deployments/APP_GEOREGION1_ARM",
+  "location": null,
+  "name": "APP_GEOREGION1_ARM",
+  "properties": {
+    "correlationId": "7e489957-203a-4ec3-b900-2bc17253afb3",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/serverfarms/dslcompanydeka3030app1-plan",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1-plan",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1",
+        "resourceGroup": "ghostappldeka-rg",
+        "resourceName": "dslcompanydeka3030app1",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1",
+            "resourceType": "Microsoft.Web/sites"
+          }
+        ],
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/config/web",
+        "resourceGroup": "ghostappldeka-rg",
+        "resourceName": "dslcompanydeka3030app1/web",
+        "resourceType": "Microsoft.Web/sites/config"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Insights/components/dslcompanydeka3030app1-insights",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1-insights",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/config/appsettings",
+        "resourceGroup": "ghostappldeka-rg",
+        "resourceName": "dslcompanydeka3030app1/appsettings",
+        "resourceType": "Microsoft.Web/sites/config"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/config/appsettings",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1/appsettings",
+            "resourceType": "Microsoft.Web/sites/config"
+          }
+        ],
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/sourcecontrols/web",
+        "resourceGroup": "ghostappldeka-rg",
+        "resourceName": "dslcompanydeka3030app1/web",
+        "resourceType": "Microsoft.Web/sites/sourcecontrols"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1",
+            "resourceType": "Microsoft.Web/sites"
+          }
+        ],
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Insights/components/dslcompanydeka3030app1-insights",
+        "resourceGroup": "ghostappldeka-rg",
+        "resourceName": "dslcompanydeka3030app1-insights",
+        "resourceType": "Microsoft.Insights/components"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/serverfarms/dslcompanydeka3030app1-plan",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1-plan",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Insights/autoscalesettings/dslcompanydeka3030app1-plan-setting",
+        "resourceGroup": "ghostappldeka-rg",
+        "resourceName": "dslcompanydeka3030app1-plan-setting",
+        "resourceType": "Microsoft.Insights/autoscalesettings"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/Sites/dslcompanydeka3030app1",
+            "resourceGroup": "ghostappldeka-rg",
+            "resourceName": "dslcompanydeka3030app1",
+            "resourceType": "Microsoft.Web/Sites"
+          }
+        ],
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/slots/UAT",
+        "resourceGroup": "ghostappldeka-rg",
+        "resourceName": "dslcompanydeka3030app1/UAT",
+        "resourceType": "Microsoft.Web/sites/slots"
+      }
+    ],
+    "duration": "PT17M18.552389S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.DocumentDB/databaseAccounts/dslcompanycosmosactdeka3030",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Insights/autoscalesettings/dslcompanydeka3030app1-plan-setting",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Insights/components/dslcompanydeka3030app1-insights",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.OperationalInsights/workspaces/LA-WORSPACE-DSL",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/serverfarms/dslcompanydeka3030app1-plan",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/config/appsettings",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/config/web",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/slots/UAT",
+        "resourceGroup": "ghostappldeka-rg"
+      },
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1/sourcecontrols/web",
+        "resourceGroup": "ghostappldeka-rg"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "appServicePlanInstances": {
+        "type": "Int",
+        "value": 1
+      },
+      "applicationName": {
+        "type": "String",
+        "value": "dslcompanydeka3030app1"
+      },
+      "autoscaleEnabled": {
+        "type": "Bool",
+        "value": true
+      },
+      "branch": {
+        "type": "String",
+        "value": "master"
+      },
+      "changePercentScaleIn": {
+        "type": "Int",
+        "value": 10
+      },
+      "changePercentScaleOut": {
+        "type": "Int",
+        "value": 20
+      },
+      "containerName": {
+        "type": "String",
+        "value": "Items"
+      },
+      "cosmosactName": {
+        "type": "String",
+        "value": "dslcompanycosmosactdeka3030"
+      },
+      "databaseName": {
+        "type": "String",
+        "value": "ghostdb"
+      },
+      "defaultCapacity": {
+        "type": "Int",
+        "value": 1
+      },
+      "deploy App Insights": {
+        "type": "Bool",
+        "value": true
+      },
+      "email From Address": {
+        "type": "String",
+        "value": ""
+      },
+      "email Password": {
+        "type": "String",
+        "value": ""
+      },
+      "email Service": {
+        "type": "String",
+        "value": "Not configured"
+      },
+      "email Username": {
+        "type": "String",
+        "value": ""
+      },
+      "environments": {
+        "type": "Array",
+        "value": [
+          "UAT"
+        ]
+      },
+      "laworkspace": {
+        "type": "String",
+        "value": "LA-WORSPACE-DSL"
+      },
+      "maximumCapacity": {
+        "type": "Int",
+        "value": 2
+      },
+      "metricName": {
+        "type": "String",
+        "value": "CpuPercentage"
+      },
+      "metricThresholdToScaleIn": {
+        "type": "Int",
+        "value": 20
+      },
+      "metricThresholdToScaleOut": {
+        "type": "Int",
+        "value": 60
+      },
+      "minimumCapacity": {
+        "type": "Int",
+        "value": 1
+      },
+      "repoUrl": {
+        "type": "String",
+        "value": "https://github.com/hiranyadeka842github/DLSBLOGAZURECLOUD"
+      },
+      "siteLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "sku_tier": {
+        "type": "String",
+        "value": "S1"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverfarms",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/config",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/sourcecontrols",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites/slots",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.OperationalInsights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "workspaces",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "components",
+            "zoneMappings": null
+          },
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "autoscalesettings",
+            "zoneMappings": null
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "2519281320383214312",
+    "templateLink": {
+      "contentVersion": "1.0.0.2",
+      "id": null,
+      "queryString": null,
+      "relativePath": null,
+      "uri": "https://raw.githubusercontent.com/hiranyadeka842github/DLSBLOGAZURECLOUD/master/APP_GEOREGION1_ARM.json"
+    },
+    "timestamp": "2021-08-08T21:22:27.420793+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "ghostappldeka-rg",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
+Wating for 30 seconds for next deployment
+    "appServicePlanId": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/serverfarms/dslcompanydeka3030app1-plan",
+    "defaultHostName": "dslcompanydeka3030app1.azurewebsites.net",
+      "dslcompanydeka3030app1.azurewebsites.net",
+      "dslcompanydeka3030app1.scm.azurewebsites.net"
+        "name": "dslcompanydeka3030app1.azurewebsites.net",
+        "name": "dslcompanydeka3030app1.scm.azurewebsites.net",
+      "dslcompanydeka3030app1.azurewebsites.net"
+    "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/sites/dslcompanydeka3030app1",
+    "name": "dslcompanydeka3030app1",
+    "repositorySiteName": "dslcompanydeka3030app1",
+      "displayName": "dslcompanydeka3030app1",
+      "hidden-related:/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Web/serverfarms/dslcompanydeka3030app1-plan": "Resource"
+The webapp name dslcompanydeka3030app2 was already used by someone, please have a look manually and delete the resources if it was created on your subscription
+PS C:\Users\Hiranya1\Desktop\ARM_TEMPLATES>
+
+
+PS C:\Users\Hiranya1\Desktop\ARM_TEMPLATES> ./azureghostdeploytwoglobalregions.ps1
+ERROR: unrecognized arguments: -n ghostappldeka-rg
+
+TRY THIS:
+az group list --query "[?location=='westus']"
+List all resource groups located in the West US region.
+
+az group list --tag key=value
+List resource groups. (autogenerated)
+
+az group show --resource-group myresourcegroup
+Gets a resource group. (autogenerated)
+
+https://docs.microsoft.com/en-US/cli/azure/group#az_group_list
+Read more about the command in reference docs
+Creating the resource group
+{
+  "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg",
+  "location": "eastus",
+  "managedBy": null,
+  "name": "ghostappldeka-rg",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": null,
+  "type": "Microsoft.Resources/resourceGroups"
+}
+Resource group Created
+The webapp name dslcompanydeka3030app1 was already used by someone, please have a look manually and delete the resources if it was created on your subscription
+Wating for 30 seconds for next deployment
+Deploying the dslcompanydeka3030app2 for Ghost application build on Azure app services
+{"status":"Failed","error":{"code":"DeploymentFailed","message":"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/DeployOperations for usage details.","details":[{"code":"BadRequest","message":"{\r\n  \"code\": \"BadRequest\",\r\n  \"message\": \"Could not retrieve Log Analytics workspace.\",\r\n  \"innererror\": {\r\n    \"diagnosticcontext\": \"bc71f48b-4d55-4930-a620-59b4dbcc447d\",\r\n    \"time\": \"2021-08-08T21:27:46.8846409Z\"\r\n  }\r\n}"}]}}
+Wating for 30 seconds for next deployment
+Creating frontdoor with the wbeapps as backend pool endpoints
+{
+  "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Resources/deployments/ARMFRONTDOOR",
+  "location": null,
+  "name": "ARMFRONTDOOR",
+  "properties": {
+    "correlationId": "dcafd67b-84dd-41a0-a47d-88c60cfc38b8",
+    "debugSetting": null,
+    "dependencies": [],
+    "duration": "PT34.5329727S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Network/frontDoors/dslcompanydeka3030global",
+        "resourceGroup": "ghostappldeka-rg"
+      }
+    ],
+    "outputs": {},
+    "parameters": {
+      "backendPools1": {
+        "type": "Object",
+        "value": {
+          "backends": [
+            {
+              "address": "dslcompanydeka3030app1.azurewebsites.net",
+              "enabledState": "Enabled",
+              "httpPort": 80,
+              "httpsPort": 443,
+              "priority": 1,
+              "weight": 50
+            },
+            {
+              "address": "dslcompanydeka3030app2.azurewebsites.net",
+              "enabledState": "Enabled",
+              "httpPort": 80,
+              "httpsPort": 443,
+              "priority": 2,
+              "weight": 50
+            }
+          ],
+          "name": "backendPool1"
+        }
+      },
+      "frontDoorName": {
+        "type": "String",
+        "value": "dslcompanydeka3030global"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Network",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "frontDoors",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "9191691254418870511",
+    "templateLink": {
+      "contentVersion": "1.0.0.0",
+      "id": null,
+      "queryString": null,
+      "relativePath": null,
+      "uri": "https://raw.githubusercontent.com/hiranyadeka842github/DLSBLOGAZURECLOUD/master/ARMFRONTDOOR.json"
+    },
+    "timestamp": "2021-08-08T21:29:24.267114+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "ghostappldeka-rg",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
+Wating for 30 seconds for next deployment
+{
+  "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Resources/deployments/ARMTRAFFICMGR",
+  "location": null,
+  "name": "ARMTRAFFICMGR",
+  "properties": {
+    "correlationId": "738c9775-27c7-43ce-b29e-4b66d88364fd",
+    "debugSetting": null,
+    "dependencies": [],
+    "duration": "PT5.4656448S",
+    "error": null,
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputResources": [
+      {
+        "id": "/subscriptions/d25ee154-593d-4577-b98d-c6be51255a4d/resourceGroups/ghostappldeka-rg/providers/Microsoft.Network/trafficManagerProfiles/aztrafficghostblogdeka1endpoint",
+        "resourceGroup": "ghostappldeka-rg"
+      }
+    ],
+    "outputs": null,
+    "parameters": {
+      "uniqueDnsName": {
+        "type": "String",
+        "value": "aztrafficghostblogdeka1"
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Network",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiProfiles": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "defaultApiVersion": null,
+            "locationMappings": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "trafficManagerProfiles",
+            "zoneMappings": null
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "templateHash": "4985954303408014725",
+    "templateLink": {
+      "contentVersion": "1.0.0.0",
+      "id": null,
+      "queryString": null,
+      "relativePath": null,
+      "uri": "https://raw.githubusercontent.com/hiranyadeka842github/DLSBLOGAZURECLOUD/master/ARMTRAFFICMGR.json"
+    },
+    "timestamp": "2021-08-08T21:30:32.563475+00:00",
+    "validatedResources": null
+  },
+  "resourceGroup": "ghostappldeka-rg",
+  "tags": null,
+  "type": "Microsoft.Resources/deployments"
+}
+All resources have been created
+You can try accesing the all 4 weblinks.... frontdoor and trafic manager is throwing 404 error on my system. Needs to troubleshoot
+PS C:\Users\Hiranya1\Desktop\ARM_TEMPLATES>
+
+
