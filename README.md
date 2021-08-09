@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # The Technical Assignmet Exercise to create a Ghost Blog to available globally with required criterias
 =======
 ### High Level Architecture design split into two secitoons:
@@ -11,7 +10,7 @@
         
   Entire design solution has been documented and demo with tested on Free account:
 
-1. ARM template deploy for first website resources in One region:
+1. ARM template deploy for first website resources in One region(Important note: Please make sure to use the resource group name on deployment fron Azure portal: ghostappldeka-rg for all 4 ARM template deployments):
 
       https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FAPP_GEOREGION1_ARM.json
       
