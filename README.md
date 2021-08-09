@@ -4,6 +4,8 @@ Architecture with best possible degion as per Geographical High Availbility and 
 
 ![image](https://user-images.githubusercontent.com/88244214/128779627-a632fa5b-096c-48b9-a93e-613eda9c343b.png)
 
+![image](https://user-images.githubusercontent.com/88244214/128780506-cce90905-c786-42bc-b1ee-23acf9cf21cd.png)
+
 
 ### High Level Architecture design split into two secitoons:
         1. Azure Infrastructure Components
@@ -13,7 +15,7 @@ Architecture with best possible degion as per Geographical High Availbility and 
         DEVOPS CI/CD Pipelines
         GITHUB REPOS
       
-      ![image](https://user-images.githubusercontent.com/88244214/128780424-068c40b6-06e4-4c2d-92b1-726e1ba60efc.png)
+
 
         
         
