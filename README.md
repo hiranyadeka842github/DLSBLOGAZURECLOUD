@@ -23,9 +23,13 @@ Architecture with best possible degion as per Geographical High Availbility and 
 
       https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FAPP_GEOREGION2_ARM.json
 
-3. Azure Front door resource pointing to website1 and website2:
+3. Azure Front door resource pointing to website1 and website2(404 error):
 
-4. Azure traffic manager profile pointing to website1 and website2:
+ https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FARMFRONTDOOR.json
+
+4. Azure traffic manager profile pointing to website1 and website2(404 error):
+
+
 
 
 
