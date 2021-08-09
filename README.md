@@ -41,4 +41,14 @@ https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.github
 
 This is just a DEMO to show the resources as per design getting created and initial idea is displayed here. In customer's environment Linked or nested template can be created and also should be run through CI/CD pipelines.
 
+Powershell script output which failed for second website resources and reran after corrections:
+
+https://github.com/hiranyadeka842github/DLSBLOGAZURECLOUD/blob/master/ghostapp_powershelldeployoutput_08082021.txt
+
+
+ANOETHER REPOSITORY to use similar concept where Python app will be created and will be run Ubuntu using shell scripting, which will be deployed on VMSS. The script has option to conintue the blog job which will increase CPU utilization and then automaticallly new VM instances will get increased:
+
+https://github.com/hiranyadeka842github/BLOGDEMOONLY
+
+
 
