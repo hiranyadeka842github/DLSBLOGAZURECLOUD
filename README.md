@@ -12,6 +12,10 @@ Architecture with best possible degion as per Geographical High Availbility and 
 ### Common methodologies to be used are  #####
         DEVOPS CI/CD Pipelines
         GITHUB REPOS
+      
+      ![image](https://user-images.githubusercontent.com/88244214/128780424-068c40b6-06e4-4c2d-92b1-726e1ba60efc.png)
+
+        
         
   Entire design solution has been documented and demo with tested on Free account:
 
