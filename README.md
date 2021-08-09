@@ -1,5 +1,9 @@
 # The Technical Assignmet Exercise to create a Ghost Blog to available globally with required criterias
 =======
+
+![image](https://user-images.githubusercontent.com/88244214/128779627-a632fa5b-096c-48b9-a93e-613eda9c343b.png)
+
+
 ### High Level Architecture design split into two secitoons:
         1. Azure Infrastructure Components
         2. Application Development Components
@@ -14,8 +18,9 @@
 
       https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FAPP_GEOREGION1_ARM.json
       
-2. ARM to deploy second website resources in Second region:
+2. ARM to deploy second website resources in Second region(Here also, please use the same resource group name on deployment: ghostappldeka-rg):
 
+      https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FAPP_GEOREGION2_ARM.json
 
 3. Azure Front door resource pointing to website1 and website2:
 
