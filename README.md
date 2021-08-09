@@ -14,9 +14,11 @@ Architecture with best possible degion as per Geographical High Availbility and 
 ### Common methodologies to be used are  #####
         DEVOPS CI/CD Pipelines
         GITHUB REPOS
-      
+        
+        
+   For any changes to master branch Build & Release pipelines to be triggered automatically which will be based on approval for the corresponding feature branches used by multiple developers.      
 
-
+        Azure boards to be used for easy traccking, querying, reporting and graphical represntation of individual and related jobs & tasks.
         
         
   Entire design solution has been documented and demo with tested on Free account:
