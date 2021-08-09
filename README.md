@@ -11,5 +11,9 @@
 ### Common methodologies to be used are  #####
         DEVOPS CI/CD Pipelines
         GITHUB REPOS
-        
+
+ARM template deploy for first website resources in One region:
+
+https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FAPP_GEOREGION1_ARM.json
+
 
