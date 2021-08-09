@@ -16,7 +16,7 @@ Architecture with best possible degion as per Geographical High Availbility and 
         GITHUB REPOS
         
         
-   For any changes to master branch Build & Release pipelines to be triggered automatically which will be based on approval for the corresponding feature branches used by multiple developers.      
+   For any changes to master branch Build & Release pipelines to be triggered automatically which will be based on approval for the corresponding feature branches used by multiple developers. For production deployment, there should be pre-deployment approvals in place which needs be approved by designated reviewers.
 
         Azure boards to be used for easy traccking, querying, reporting and graphical represntation of individual and related jobs & tasks.
         
