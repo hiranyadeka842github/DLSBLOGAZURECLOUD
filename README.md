@@ -33,11 +33,11 @@ Architecture with best possible degion as per Geographical High Availbility and 
 
 3. Azure Front door resource pointing to website1 and website2(404 error):
 
-        https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FARMFRONTDOOR.json
+https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FARMFRONTDOOR.json
 
 4. Azure traffic manager profile pointing to website1 and website2(404 error):
 
-        https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FARMTRAFFICMGR.json
+https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiranyadeka842github%2FDLSBLOGAZURECLOUD%2Fmaster%2FARMTRAFFICMGR.json
 
 This is just a DEMO to show the resources as per design getting created and initial idea is displayed here. In customer's environment Linked or nested template can be created and also should be run through CI/CD pipelines.
 
