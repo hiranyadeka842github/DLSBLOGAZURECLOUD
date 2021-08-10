@@ -20,8 +20,19 @@ Architecture with best possible degion as per Geographical High Availbility and 
 
         Azure boards to be used for easy traccking, querying, reporting and graphical represntation of individual and related jobs & tasks.
         
-        
+  
   Entire design solution has been documented and demo with tested on Free account:
+
+**Option1 to execute using powershell**:
+
+1.	Please go to GITHUB link) and download the powershell script:
+	        hiranyadeka842github/DLSBLOGAZURECLOUD
+2.	az login
+4.	Then run the script which will deploy all resources(Either Pipelines from azure devops or on local computer):
+5.	Once tested delete the entire resource group:
+                az group delete -n ghostappldeka-rg
+
+**Option2 to deploy using ARM templates**:
 
 1. ARM template deploy for first website resources in One region(Important note: Please make sure to use the resource group name on deployment fron Azure portal: ghostappldeka-rg for all 4 ARM template deployments):
 
