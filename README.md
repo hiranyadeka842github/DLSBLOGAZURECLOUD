@@ -66,3 +66,21 @@ https://github.com/hiranyadeka842github/BLOGDEMOONLY
 
 
 
+HIEH LEVEL STEPS ANY CHANGES TO APPLICATION END AFTER GO-LIVE:
+
+**Build Job**: Download files from production using inline scripts:
+
+1. First get the webpublshing credentials for the correspodning webapp using Get-AzureRmWebAppPublishingCredentials & Invoke-AzureRmResourceAction for the deployment slots "dslcompanydeka3030app1/UAT" and then getting kudotoken and kudourl to download the relevant files to Build repository local path running 
+2. Take database backups running Star-webjob
+3. download & zipp folders content/data,content/images,content/data, themes/casperforyr  using Start-ZipDownload
+4.  extract all zip files in Build server
+5. Run "node db.js"  to upgrade on build server
+6. Delete all other zipped, azure arm and git hub relatd files from Build server running 
+7. FInally zip again publish to Artifact and prepare release pipelines (Make sure to enable CI for automatic trigger when master branch is updated)
+
+**RELEASE1 (UAT SLOT)**:
+
+Create a release pipeline to deploy to stop Azure app service for UAT slot dslcompanydeka3030app1/UAT & deploy to same with all required parameters. Once deployed start the services back. Then perform the testing if deployment to UAT slot is successful and functioning properly.
+
+**PROD RELEASE**:
+Now perform final deploy to production after approval from reviewers as a part of pre-approval by swapping the slots from uat to production one(dslcompanydeka3030app1/UAT to dslcompanydeka3030app1).
