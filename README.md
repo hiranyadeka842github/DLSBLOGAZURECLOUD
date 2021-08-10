@@ -26,7 +26,7 @@ Architecture with best possible degion as per Geographical High Availbility and 
 **Option1 to execute using powershell**:
 
 1.	Please go to GITHUB link) and download the powershell script:
-	        hiranyadeka842github/DLSBLOGAZURECLOUD
+	        https://github.com/hiranyadeka842github/DLSBLOGAZURECLOUD/blob/master/azureghostdeploytwoglobalregions.ps1
 2.	az login
 4.	Then run the script which will deploy all resources(Either Pipelines from azure devops or on local computer):
 5.	Once tested delete the entire resource group:
