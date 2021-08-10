@@ -1,6 +1,6 @@
 # The Technical Assignmet Exercise to create a Ghost Blog to available globally with required criterias
 =======
-Architecture with best possible degion as per Geographical High Availbility and Disaster recovery options:
+Architecture with best possible design as per Geographical High Availbility and Disaster recovery options:
 
 ![image](https://user-images.githubusercontent.com/88244214/128779627-a632fa5b-096c-48b9-a93e-613eda9c343b.png)
 
