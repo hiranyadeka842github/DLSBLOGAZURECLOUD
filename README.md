@@ -67,11 +67,12 @@ https://github.com/hiranyadeka842github/BLOGDEMOONLY
 
 **Option3 to deploy from GITHUB Actions, tested in another repo which is private one. Will update the steps here**:
 
-	The actions to be done for login to Azure subscriotions:
-		1. Create a servie Principal with sdk--auth options. And provide contributor access to the Service Pricipal either on Subscription level or on Resource group(ghostappldeka-rg) level. For resource group level, resource group(ghostappldeka-rg) needs to be created upfront:
+The actions to be done for login to Azure subscriotions:
+
+1. Create a servie Principal with sdk--auth options. And provide contributor access to the Service Pricipal either on Subscription level or on Resource group(ghostappldeka-rg) level. For resource group level, resource group(ghostappldeka-rg) needs to be created upfront:
 		
-	Resource group level:	az ad sp create-for-rbac -n githubactiodekasp --role contributor --scopes /subscriptions/<Subscription Name>/ghostappldeka-rg --sdk-auth
-	Subscription level: az ad sp create-for-rbac -n githubactiodekasp --role contributor --scopes /subscriptions/<Subscription Name> --sdk-auth
+Resource group level:	az ad sp create-for-rbac -n githubactiodekasp --role contributor --scopes /subscriptions/<Subscription Name>/ghostappldeka-rg --sdk-auth
+Subscription level: az ad sp create-for-rbac -n githubactiodekasp --role contributor --scopes /subscriptions/<Subscription Name> --sdk-auth
 
 Copy the entirecredntial json outputs and Go to GITHUB account https://github.com/hiranyadeka842github/DLSBLOGAZURECLOUD/settings
 Adde new secret, give a name and paste the credentials accordingly which will be used by GITHUB actions to login to Azure and deploy resources as per definition on Github Action workflow file.  
@@ -80,7 +81,7 @@ Adde new secret, give a name and paste the credentials accordingly which will be
 
 
 
-HIEH LEVEL STEPS ANY CHANGES TO APPLICATION END AFTER GO-LIVE:
+**HIGH LEVEL STEPS ANY CHANGES TO APPLICATION END AFTER GO-LIVE**:
 
 **Build Job**: Download files from production using inline scripts:
 
