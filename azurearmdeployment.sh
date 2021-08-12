@@ -1,3 +1,5 @@
+#!/bin/bash
+
 webapp1="dslcompanydeka3030app1"
 webapp2="dslcompanydeka3030app2"
 frondoor="dslcompanydeka3030global"
@@ -6,7 +8,7 @@ rggroup ="ghostappldeka-rg"
 
 ### Create resource group if not exists
 
-az group list -n ghostappldeka-rg > /dev/null
+az group list --query "[?location=='eastus']"|grep -i "ghostappldeka-rg" > /dev/null
 if [ $? -ne 0 ]
 then
 echo "Creating the resource group"
