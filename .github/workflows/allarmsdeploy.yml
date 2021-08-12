@@ -1,12 +1,11 @@
 
 ##on : [push]
 
-##on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
-##  push:
-##    branches:
-##      - main
+on:
+
+  push:
+    branches:
+      - main
 
 name: azureARMDeploy
 
@@ -28,4 +27,5 @@ jobs:
           uses: azure/CLI@v1
           with:
             inlineScript: |
-              ./azurearmdeployment.sh
+             chmod +x azurearmdeployment.sh
+             ./azurearmdeployment.sh
