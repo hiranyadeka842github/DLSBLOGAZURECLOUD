@@ -77,8 +77,12 @@ Subscription level: az ad sp create-for-rbac -n githubactiodekasp --role contrib
 Copy the entirecredntial json outputs and Go to GITHUB account https://github.com/hiranyadeka842github/DLSBLOGAZURECLOUD/settings
 Adde new secret, give a name and paste the credentials accordingly which will be used by GITHUB actions to login to Azure and deploy resources as per definition on Github Action workflow file.  
 
-
-
+The workflow file created, it will get triggered only if the ARM templates and shell script azurearmdeployment.sh gets updated. Currently inclusion file patterns are updated in such a way so that workflow does not get triggered. During the actual run please remove "XXXXXX" and will automatically trigger the workflow:
+	
+	https://github.com/hiranyadeka842github/DLSBLOGAZURECLOUD/blob/master/.github/workflows/allarmsdeploy.yml
+    paths:
+      - '**XXXXXXARM.json'
+      - '**XXXXXarm**'
 
 
 **HIGH LEVEL STEPS ANY CHANGES TO APPLICATION END AFTER GO-LIVE**:
