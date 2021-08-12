@@ -4,11 +4,11 @@ webapp1="dslcompanydeka3030app1"
 webapp2="dslcompanydeka3030app2"
 frondoor="dslcompanydeka3030global"
 ttfkmanager="aztrafficghostblogdeka1"
-rggroup ="ghostappldeka-rg"
+rggroup ="ghostappldeka\-rg"
 
 ### Create resource group if not exists
 
-az group list --query "[?location=='eastus']"|grep -i "ghostappldeka-rg" > /dev/null
+az group list --query "[?location=='eastus']"|grep -i "${rggroup}" > /dev/null
 if [ $? -ne 0 ]
 then
 echo "Creating the resource group"
