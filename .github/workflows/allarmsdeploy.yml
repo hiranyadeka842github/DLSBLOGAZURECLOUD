@@ -1,1 +1,24 @@
 
+on : [push]
+
+name: azureARMDeploy
+
+jobs:
+
+    deploy:
+      runs-on: ubuntu-latest
+      steps: 
+
+        - name: Login in to Azure
+          uses: azure/login@v1
+          with:
+            creds: ${{ secrets.AZURE_SECRETS }}
+
+        - name: Checkout Source Code
+          uses: actions/checkout@v2
+
+        - name: Azure Cli
+          uses: azure/CLI@v1
+          with:
+            inlineScript: |
+              az deployment group -l westeurope
