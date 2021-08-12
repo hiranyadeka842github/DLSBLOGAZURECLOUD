@@ -3,8 +3,8 @@ on:
     branches:
       - master
     paths:
-      - '**ARM.json'
-      - '**arm**'
+      - '**XXXXXXARM.json'
+      - '**XXXXXarm**'
       
 
 name: azureARMDeploy
