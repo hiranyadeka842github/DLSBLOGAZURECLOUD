@@ -1,5 +1,6 @@
 #!/bin/bash
 
+###RUN
 webapp1="dslcompanydeka3030app1"
 webapp2="dslcompanydeka3030app2"
 frondoor="dslcompanydeka3030global"
