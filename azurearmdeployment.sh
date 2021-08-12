@@ -4,7 +4,7 @@ webapp1="dslcompanydeka3030app1"
 webapp2="dslcompanydeka3030app2"
 frondoor="dslcompanydeka3030global"
 ttfkmanager="aztrafficghostblogdeka1"
-rggroup="ghostappldeka\-rg"
+rggroup="ghostappldeka-rg"
 
 ### Create resource group if not exists
 
