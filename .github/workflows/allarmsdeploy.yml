@@ -2,6 +2,10 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '**ARM.json'
+      - '**arm**'
+      
 
 name: azureARMDeploy
 
