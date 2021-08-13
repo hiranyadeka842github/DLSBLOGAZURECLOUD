@@ -172,7 +172,7 @@
     }
   },
   "variables": {
-    "appInsightsName": "[concat(parameters('applicationName'), '-insights')]",
+    "appInsightsName": "[parameters('applicationName')]",
     "hostingPlanName": "[concat(parameters('applicationName'), '-plan')]",
     "sku": "[parameters('sku_tier')]",
     "subscriptionId": "[subscription().subscriptionId]",
